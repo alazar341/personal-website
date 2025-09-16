@@ -1,0 +1,126 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #09122C;
+    color: #D3DAD9;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+    margin: 2% 20%;
+}
+#navigation{
+    margin-right: 10%;
+}
+#nav-container{
+    display: flex;
+    justify-content: flex-end;
+}
+#nav-container li{
+    list-style: none;
+    padding: 10px 30px;
+}
+a{
+    text-decoration: none;
+    color: #D3DAD9;
+}
+#navigation a:hover, #contact-me a:hover{
+    text-decoration: underline;
+    color: #F7374F;
+}
+#navigation>#logo{
+    position: relative;
+    top: 53px;
+    font-size: larger;
+}
+.first-name{
+    color: #F7374F;
+}
+#header{
+    height: 90vh;
+}
+#header-content{
+    padding-top: 100px;
+}
+h1{
+    font-size: 70px;
+}
+.header-button{
+    padding: 15px 25px;
+    border-radius: 3px;
+    line-height: 3;
+}
+#resume-button{
+    background-color: #F7374F;
+    margin-right: 10px;
+}
+#contact-me-button{
+    background-color: #162c6c;
+}
+#header-content p{
+    line-height: 2;
+}
+h2{
+    color: #F7374F;
+    font-size: 40px;
+}
+#skills{
+    height: 90vh;
+}
+#skills-container{
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+.skill{
+    flex-basis: 20%;
+    padding: 20px;
+    border-radius: 5px;
+    border: 2px #F7374F solid;
+}
+.skill svg{
+    width: 30px;
+    height: auto;
+}
+
+#projects{
+    height: 90vh;
+}
+.projects{
+    display: flex;
+    justify-content: space-between;
+}
+.projects img{
+    height: 200px;
+    border-radius: 5px;
+}
+.projects>.project-description{
+    flex-basis: 80%;
+}
+
+@media (max-width:760px){
+    body{
+        margin: 2% 10%;
+    }
+}
+@media (max-width:610px){
+    h1{
+        font-size: 60px;
+    }
+    #nav-container li {
+        padding: 10px 20px;   
+    }
+}
+@media (max-width:530px){
+    body{
+        margin: 2% 5%;
+    }
+}
+@media (max-width: 420px){
+    #logo{
+        display: none;
+    }
+    .projects>img{
+        display: none;
+    }
+}
